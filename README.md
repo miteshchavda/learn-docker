@@ -15,12 +15,12 @@ make build
 
 **Run docker image**
 ```
-make run
+make up
 ```
 
 **Stop container**
 ```
-make stop
+make down
 ```
 
 **Ssh into container**

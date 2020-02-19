@@ -4,7 +4,7 @@ DEST_NOTEBOOK_PATH="/home/notebooks"
 build:
 	docker build -t $(APP_NAME) -f Dockerfile .
 
-run:
+up:
 	docker run -it -p 8888:8888 -v $(PWD)/notebooks:$(DEST_NOTEBOOK_PATH) $(APP_NAME)
 
 down:
