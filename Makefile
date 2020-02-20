@@ -5,7 +5,7 @@ build:
 	docker build -t $(APP_NAME) -f Dockerfile .
 
 up:
-	docker run -it -p 8888:8888 -v $(PWD)/notebooks:$(DEST_NOTEBOOK_PATH) $(APP_NAME)
+	docker run -it -p 8888:8888 -v $(PWD)/notebooks:$(DEST_NOTEBOOK_PATH) $(APP_NAME) ${ARG}
 
 down:
 	docker stop $(APP_NAME)

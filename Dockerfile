@@ -22,4 +22,8 @@ RUN pip3 install -r requirements.txt
 # Create notebooks directory
 RUN mkdir /home/notebooks
 
-CMD jupyter lab --no-browser --ip 0.0.0.0 --port 8888 --allow-root /home/notebooks
+COPY entrypoint.sh /usr/bin/
+RUN chmod +x /usr/bin/entrypoint.sh
+
+ENTRYPOINT ["/usr/bin/entrypoint.sh"]
+CMD ["python3"]
