@@ -1,6 +1,7 @@
 # https://docs.docker.com/engine/reference/builder/#from
 FROM ubuntu:18.04
 
+# https://docs.docker.com/engine/reference/builder/#run
 # https://help.ubuntu.com/lts/serverguide/apt.html
 RUN apt update
 RUN apt -y upgrade
