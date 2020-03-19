@@ -32,3 +32,13 @@ make shell
 ```
 make notebook
 ```
+
+**Create a local network**
+```
+make create_network
+```
+
+**Start Postgres db locally**
+```
+make start_local_db
+```
