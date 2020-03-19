@@ -1,2 +1,4 @@
 jupyterlab
-panda
+pandas
+SQLAlchemy
+psycopg2-binary
